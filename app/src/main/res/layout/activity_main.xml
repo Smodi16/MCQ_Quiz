@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.mcq_quiz.MainActivity"
+    android:weightSum="1"
+    android:background="@drawable/background2"
+    >
+
+    <TextView
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:text="Q.1. Brass gets discoloured in air because of the presence of which of the following gases in air?"
+        android:textSize="20dp"
+        android:padding="40dp"
+        android:textColor="#240cdc"
+        android:id="@+id/ques1"
+        tools:layout_editor_absoluteY="32dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <RadioGroup
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/ques1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="33dp">
+
+
+        <RadioButton
+            android:id="@+id/choice1"
+            android:layout_width="441dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Oxygen"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="183dp" />
+
+        <RadioButton
+            android:id="@+id/choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Hydrogen Sulphide"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="233dp" />
+
+        <RadioButton
+            android:id="@+id/choice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Carbon Dioxide"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="277dp" />
+
+        <RadioButton
+            android:id="@+id/choice4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Nitrogen"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="321dp" />
+    </RadioGroup>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="447dp"
+        tools:layout_editor_absoluteX="288dp"
+        android:text="NEXT"
+        android:id="@+id/nextbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/ques1"
+        android:layout_alignEnd="@+id/ques1"
+        android:layout_marginBottom="24dp" />
+</RelativeLayout>
